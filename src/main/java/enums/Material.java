@@ -1,5 +1,7 @@
 package enums;
 
+//Added but not implemented
+
 public enum Material {
 
     Jeans("Jeans"), Fur("Fur"), Leather("Leather"), Flannel("Flannel"), Nylon("Nylon ");

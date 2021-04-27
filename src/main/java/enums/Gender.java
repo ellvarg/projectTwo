@@ -1,5 +1,7 @@
 package enums;
 
+//Added but not implemented
+
 public enum Gender {
 
     Masculino("Masculino"), Feminino("Feminino");

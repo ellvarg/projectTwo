@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class CollectionMenu {
 
+    //MENU
     public static void CollectionManagementMenu() {
 
         Scanner sc = new Scanner(System.in);
 
-        //MENU
         int opcao = 0;
         while (opcao != 5) {
             menu();

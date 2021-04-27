@@ -1,5 +1,7 @@
 package enums;
 
+//Added but not implemented
+
 public enum Activity {
 
     Casual("Casual"), Running("Running"), Hiking("Hiking"), Soccer("Soccer"), Basketball("Basketball"), Baseball ("Baseball");

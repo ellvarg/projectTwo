@@ -1,5 +1,7 @@
 package enums;
 
+//Added but not implemented
+
 public enum Color {
 
     Black("Black"), White("White"), Red("Red"), Blue("Blue"), Green("Green");

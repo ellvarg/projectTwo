@@ -1,7 +1,5 @@
 package controllers;
 
-
-import entities.Image;
 import entities.Product;
 
 import java.util.ArrayList;
@@ -14,6 +12,7 @@ public class ProductController {
 
     public static ArrayList<Product> listOfProducts = null;
 
+    //Saving a product and adding it to a list
     public static void saveProduct() {
 
         String name;
@@ -27,7 +26,7 @@ public class ProductController {
         System.out.print("Name: ");
         name = sc.nextLine();
 
-        // Captura Exceção caso usuario insira texto invés de número
+        //Capture Exception if user enters text instead of number
         try {
             System.out.print("Price: ");
             price = sc.nextDouble();
@@ -40,7 +39,7 @@ public class ProductController {
         sc.nextLine();
         description = sc.nextLine();
 
-        // Captura Exceção caso usuario insira texto invés de número
+        //Capture Exception if user enters text instead of number
         try {
             System.out.print("Quantity in stock: ");
             quantity = sc.nextInt();
@@ -60,7 +59,7 @@ public class ProductController {
 
     }
 
-    //Percorrendo lista de produtos e imprimindo o nome
+    //Scrolling through the product list and printing the name
     public static void listProducts() {
 
         for (int i = 0; i < listOfProducts.size(); i++) {
@@ -68,11 +67,11 @@ public class ProductController {
         }
     }
 
-    //Percorrendo lista de produtos e verificando se possui um produto com o nome passado pelo o usuario
+    //Scrolling through the list of products and checking if you have a product with the name passed by the user
     public static void searchProduct(String nameOfProduct) {
 
         for (int i = 0; i < listOfProducts.size(); i++) {
-            if (listOfProducts.get(i).getName().equals(nameOfProduct)) {
+            if (listOfProducts.get(i).getName().equalsIgnoreCase(nameOfProduct)) {
                 System.out.println();
                 System.out.println("Price: " + listOfProducts.get(i).getPrice());
                 System.out.println("Description: " + listOfProducts.get(i).getDescription());

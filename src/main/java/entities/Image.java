@@ -1,5 +1,7 @@
 package entities;
 
+//Added but not implemented
+
 public class Image {
 
     public String name;

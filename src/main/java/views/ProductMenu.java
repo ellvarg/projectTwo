@@ -7,12 +7,12 @@ import java.util.Scanner;
 
 public class ProductMenu {
 
+    //MENU
     public static void ProductManagementMenu() {
 
 
         Scanner sc = new Scanner(System.in);
 
-        //MENU
         int opcao = 0;
         int produtoption = 0;
         while (opcao != 4) {

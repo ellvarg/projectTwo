@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class MainMenu {
 
+    //MENU
     public static void mainMenu() {
 
         Scanner sc = new Scanner(System.in);
 
-        //MENU
         int option = 0;
         while (option != 3) {
             menu();
