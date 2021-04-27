@@ -11,7 +11,7 @@ public class Pants extends Product {
     PantsSize size;
 
 
-    public Pants(String name, double price, String description, int quantity, Collection collection) {
-        super(name, price, description, quantity, collection);
+    public Pants(String name, double price, String description, int quantity) {
+        super(name, price, description, quantity);
     }
 }

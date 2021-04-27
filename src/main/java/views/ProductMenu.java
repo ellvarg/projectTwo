@@ -1,9 +1,8 @@
 package views;
 
-import Controllers.ProductController;
-import entities.Product;
 
-import java.util.ArrayList;
+import controllers.ProductController;
+
 import java.util.Scanner;
 
 public class ProductMenu {
@@ -23,7 +22,6 @@ public class ProductMenu {
             switch (opcao) {
                 case 1:
                     System.out.println("Create a new Product:");
-
                     ProductController.saveProduct();
                     break;
 

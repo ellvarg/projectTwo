@@ -12,7 +12,7 @@ public class TShirt extends Product{
     TShirtSize size;
     Sleeve sleeve;
 
-    public TShirt(String name, double price, String description, int quantity, Collection collection) {
-        super(name, price, description, quantity, collection);
+    public TShirt(String name, double price, String description, int quantity) {
+        super(name, price, description, quantity);
     }
 }
