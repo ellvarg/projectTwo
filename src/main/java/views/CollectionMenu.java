@@ -1,5 +1,7 @@
 package views;
 
+import controllers.CollectionController;
+
 import java.util.Scanner;
 
 public class CollectionMenu {
@@ -16,26 +18,25 @@ public class CollectionMenu {
 
             switch (opcao) {
                 case 1:
-                    System.out.println("1 - Create new Collection;");
-
+                    CollectionController.createCollection();
                     break;
-
                 case 2:
-                    System.out.println("2 - Create new sub-collection");
-
+                    CollectionController.createSubCollection();
                     break;
 
                 case 3:
-                    System.out.println("3 - Search for Product");
-
+                    CollectionController.showCollections();
                     break;
 
                 case 4:
                     System.out.println("4 - List for Products in a Collection");
 
                     break;
-
                 case 5:
+                    System.out.println("4 - search for Product in a Sub-Collections");
+
+                    break;
+                case 6:
                     System.out.println("You're backing to main menu.");
                     MainMenu.mainMenu();
 
@@ -54,9 +55,10 @@ public class CollectionMenu {
         System.out.println("");
         System.out.println("1 - Create new Collection;");
         System.out.println("2 - Create new sub-collection");
-        System.out.println("3 - Search for Product");
-        System.out.println("4 - List for Products in a Collection");
-        System.out.println("5 - Back to Main Menu");
+        System.out.println("3 - List Collections");
+        System.out.println("4 - search for Product in a Sub-Collections");
+        System.out.println("5 - List for Products in a Collection");
+        System.out.println("6 - Back to Main Menu");
     }
 
 }

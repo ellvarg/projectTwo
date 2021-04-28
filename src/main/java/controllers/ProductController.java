@@ -6,11 +6,13 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+
+
 public class ProductController {
 
     Scanner sc = new Scanner(System.in);
 
-    public static ArrayList<Product> listOfProducts = null;
+    public static ArrayList<Product> listOfProducts = new ArrayList<>();
 
     //Saving a product and adding it to a list
     public static void saveProduct() {
@@ -49,13 +51,21 @@ public class ProductController {
         }
 
 
-        //Cria um produto
+        //Create a new product
         Product product = new Product(name, price, description, quantity);
-        //Adiciona produto na lista
-        listOfProducts.add(product);
-
-        System.out.println();
-        System.out.println("Product " + name + " registered successfully!");
+        String collectionName;
+        System.out.println("In what Sub-Collection do you want add this product?: ");
+        sc.nextLine();
+        collectionName = sc.nextLine();
+        if (CollectionController.validateSubCollections(collectionName)) {
+            listOfProducts.add(product);
+            CollectionController.setProductInSubCollection(collectionName, product);
+            System.out.println();
+            System.out.println("Product " + name + " registered successfully!");
+        } else {
+            System.out.println("This Sub-Collection doesn't exist \nLet's Create a Sub-Collection");
+            CollectionController.createSubCollection();
+        }
 
     }
 
@@ -79,7 +89,5 @@ public class ProductController {
             }
 
         }
-
-
     }
 }
