@@ -4,13 +4,21 @@ package entities;
 
 public class Image {
 
-    public String name;
-    public String size = "600x400";
-    public String extension = ".jpg";
-    public String path = ".../User/Dowload...";
+    private String name;
+    private final String size = "600x400";
+    private final String extension = ".jpg";
+    private final String path = ".../User/Dowload...";
+
+    public Image(String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getSize() {

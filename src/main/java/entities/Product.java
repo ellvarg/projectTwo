@@ -5,11 +5,11 @@ import java.util.List;
 
 public class Product {
 
-    public String name;
-    public double price;
-    public String description;
-    public int quantity;
-    public List<Image> images;
+    private String name;
+    private double price;
+    private String description;
+    private int quantity;
+    private List<Image> images;
 
     public Product(String name, double price, String description, Integer quantity) {
         this.name = name;

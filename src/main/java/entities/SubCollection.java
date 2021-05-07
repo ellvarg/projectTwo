@@ -5,10 +5,10 @@ import java.util.Set;
 
 public class SubCollection {
 
-    public String nameSubCollection;
-    public String descriptionSubCollection;
-    public Set<String> keywordSubCollection;
-    public ArrayList<Product> Product;
+    private String nameSubCollection;
+    private String descriptionSubCollection;
+    private Set<String> keywordSubCollection;
+    private ArrayList<Product> Product;
 
 
     public SubCollection(String nameSubCollection, String descriptionSubCollection, Set<String> keywordSubCollection, ArrayList<entities.Product> product) {

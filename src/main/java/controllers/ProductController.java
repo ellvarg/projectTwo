@@ -73,7 +73,7 @@ public class ProductController {
     public static void listProducts() {
 
         for (int i = 0; i < listOfProducts.size(); i++) {
-            System.out.println(listOfProducts.get(i).name);
+            System.out.println(listOfProducts.get(i).getName());
         }
     }
 

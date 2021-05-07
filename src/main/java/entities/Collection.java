@@ -6,10 +6,10 @@ import java.util.Set;
 
 public class Collection {
 
-    public ArrayList<SubCollection> subCollection;
-    public String nameCollection;
-    public String descriptionCollection;
-    public Set<String> keywordCollection;
+    private ArrayList<SubCollection> subCollection;
+    private String nameCollection;
+    private String descriptionCollection;
+    private Set<String> keywordCollection;
 
     public Collection(ArrayList<SubCollection> subCollection, String nameCollection, String descriptionCollection, Set<String> keywordCollection) {
         this.subCollection = subCollection;
